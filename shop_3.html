@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry Collection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+        
+        .heading {
+            font-family: 'Tenor Sans', sans-serif;
+            font-weight: 400;
+            font-size: 40px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .para {
+            font-family: 'Tenor Sans', sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body class="bg-white font-sans">
+    <!-- Hero Section -->
+    <section class="w-full h-[400px] md:h-[500px] text-white">
+        <!-- Background Image -->
+        <div class="relative">
+            <img src="./images/hero_bg.png" alt="Solitaire Engagement Ring" class="w-full h-full">
+            <div class="absolute md:px-12 px-6 left-1/2 top-24 w-[800px]">
+                <h1 class="heading">SOLITAIRE ENGAGEMENT RINGS</h1>
+                <p class="para mt-4 leading-relaxed md:leading-loose">
+                    A solitaire diamond ring is a ring that features a single diamond, of any cut, on a plain metal band. This style has stood the test of time, remaining consistently popular particularly for engagement rings, due to its effortless beauty and simplicity. It's the dream choice for women who want to exude graceful opulence effortlessly. We stock a beautiful collection of solitaire diamond engagement rings to suit all tastes and budgets.
+                </p>
+            </div>
+        </div>        
+    </section>
+    <div class="container mx-auto px-4 py-8">
+        <!-- Filter Controls -->
+        <div class="mb-8">
+            <!-- Style, Shape, Metal Filters - Redesigned as Sliders -->
+            <div class="grid grid-cols-3 gap-4 mb-6 border-b pb-6">
+                <!-- Style Filter -->
+                <div class="filter-group">
+                    <h3 class="text-sm font-medium uppercase mb-4 tracking-wider">STYLE</h3>
+                    <div class="relative">
+                        <button class="absolute left-0 top-1/2 transform -translate-y-1/2 text-gray-400">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="flex justify-center space-x-6 px-8">
+                            <div class="flex flex-col items-center">
+                                <div class="w-14 h-14 flex items-center justify-center mb-2">
+                                    <img src="/api/placeholder/50/50" alt="Solitaire" class="w-10" />
+                                </div>
+                                <span class="text-xs">Solitaire</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="w-14 h-14 flex items-center justify-center mb-2">
+                                    <img src="/api/placeholder/50/50" alt="Side Stone" class="w-10" />
+                                </div>
+                                <span class="text-xs">Side Stone</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="w-14 h-14 flex items-center justify-center mb-2">
+                                    <img src="/api/placeholder/50/50" alt="Halo" class="w-10" />
+                                </div>
+                                <span class="text-xs">Halo</span>
+                            </div>
+                        </div>
+                        <button class="absolute right-0 top-1/2 transform -translate-y-1/2 text-gray-400">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Shape Filter -->
+                <div class="filter-group">
+                    <h3 class="text-sm font-medium uppercase mb-4 tracking-wider">SHAPE</h3>
+                    <div class="relative">
+                        <button class="absolute left-0 top-1/2 transform -translate-y-1/2 text-gray-400">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="flex justify-center space-x-6 px-8">
+                            <div class="flex flex-col items-center">
+                                <div class="w-14 h-14 flex items-center justify-center mb-2">
+                                    <svg class="w-8 h-8" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor"
+                                            stroke-width="1.5" />
+                                    </svg>
+                                </div>
+                                <span class="text-xs">Round</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="w-14 h-14 flex items-center justify-center mb-2">
+                                    <svg class="w-8 h-8" viewBox="0 0 24 24">
+                                        <rect x="6" y="6" width="12" height="12" transform="rotate(45 12 12)"
+                                            fill="none" stroke="currentColor" stroke-width="1.5" />
+                                    </svg>
+                                </div>
+                                <span class="text-xs">Princess</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="w-14 h-14 flex items-center justify-center mb-2">
+                                    <svg class="w-10 h-7" viewBox="0 0 36 24">
+                                        <ellipse cx="18" cy="12" rx="14" ry="10" fill="none" stroke="currentColor"
+                                            stroke-width="1.5" />
+                                    </svg>
+                                </div>
+                                <span class="text-xs">Oval</span>
+                            </div>
+                        </div>
+                        <button class="absolute right-0 top-1/2 transform -translate-y-1/2 text-gray-400">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Metal Filter -->
+                <div class="filter-group">
+                    <h3 class="text-sm font-medium uppercase mb-4 tracking-wider">METAL</h3>
+                    <div class="relative">
+                        <button class="absolute left-0 top-1/2 transform -translate-y-1/2 text-gray-400">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="flex justify-center space-x-6 px-8">
+                            <div class="flex flex-col items-center">
+                                <div class="w-14 h-14 flex items-center justify-center mb-2">
+                                    <div class="w-10 h-10 rounded-full bg-yellow-400 border-2 border-yellow-300"></div>
+                                </div>
+                                <span class="text-xs">14K</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="w-14 h-14 flex items-center justify-center mb-2">
+                                    <div class="w-10 h-10 rounded-full bg-pink-300 border-2 border-pink-200"></div>
+                                </div>
+                                <span class="text-xs">14K</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="w-14 h-14 flex items-center justify-center mb-2">
+                                    <div class="w-10 h-10 rounded-full bg-gray-200 border-2 border-gray-100"></div>
+                                </div>
+                                <span class="text-xs">14K</span>
+                            </div>
+                        </div>
+                        <button class="absolute right-0 top-1/2 transform -translate-y-1/2 text-gray-400">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Selected Filters -->
+            <div class="flex items-center justify-between space-x-2 mb-6">
+                <div class="flex items-center space-x-2 mb-6">
+                    <div class="px-3 py-1 bg-gray-100 rounded-full text-xs flex items-center">
+                        Solitaire
+                        <button class="ml-2">
+                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="px-3 py-1 bg-gray-100 rounded-full text-xs flex items-center">
+                        Round
+                        <button class="ml-2">
+                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="px-3 py-1 bg-gray-100 rounded-full text-xs flex items-center">
+                        <div class="w-3 h-3 rounded-full bg-yellow-400 mr-1"></div>
+                        14K
+                        <button class="ml-2">
+                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex items-center space-x-4">
+                        <select class="p-2">
+                            <option>Price</option>
+                            <option>Gold</option>
+                            <option>Platinum</option>
+                        </select>
+                        <div class="flex items-center space-x-2">
+                            <select class="p-2">
+                                <option>Most Recommended</option>
+                                <option>Gold</option>
+                                <option>Platinum</option>
+                            </select>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <button class="border p-1">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <rect x="3" y="3" width="7" height="7" fill="none" stroke="currentColor"
+                                        stroke-width="2" />
+                                    <rect x="14" y="3" width="7" height="7" fill="none" stroke="currentColor"
+                                        stroke-width="2" />
+                                    <rect x="3" y="14" width="7" height="7" fill="none" stroke="currentColor"
+                                        stroke-width="2" />
+                                    <rect x="14" y="14" width="7" height="7" fill="none" stroke="currentColor"
+                                        stroke-width="2" />
+                                </svg>
+                            </button>
+                            <button class="border p-1">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2" />
+                                    <line x1="3" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2" />
+                                    <line x1="3" y1="18" x2="21" y2="18" stroke="currentColor" stroke-width="2" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Sort Options -->
+            <!-- <div class="flex justify-between mb-6">
+                <div></div>
+                <div class="flex items-center space-x-4">
+                    <select class="p-2">
+                        <option>Price</option>
+                        <option>Gold</option>
+                        <option>Platinum</option>
+                    </select>
+                    <div class="flex items-center space-x-2">
+                        <select class="p-2">
+                            <option>Most Recommended</option>
+                            <option>Gold</option>
+                            <option>Platinum</option>
+                        </select>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <button class="border p-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <rect x="3" y="3" width="7" height="7" fill="none" stroke="currentColor"
+                                    stroke-width="2" />
+                                <rect x="14" y="3" width="7" height="7" fill="none" stroke="currentColor"
+                                    stroke-width="2" />
+                                <rect x="3" y="14" width="7" height="7" fill="none" stroke="currentColor"
+                                    stroke-width="2" />
+                                <rect x="14" y="14" width="7" height="7" fill="none" stroke="currentColor"
+                                    stroke-width="2" />
+                            </svg>
+                        </button>
+                        <button class="border p-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2" />
+                                <line x1="3" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2" />
+                                <line x1="3" y1="18" x2="21" y2="18" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+        <!-- Product Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="relative">
+                    <div class="bg-gray-100 aspect-square mb-2 flex items-center justify-center">
+                        <img src="/api/placeholder/200/200" alt="Round Cut Diamond Engagement Ring"
+                            class="max-h-full object-contain" />
+                    </div>
+                    <button class="absolute top-2 right-2 text-gray-400 hover:text-gray-700">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <h3 class="text-xs font-medium mb-1">Round Cut 1.5CT Diamond Engagement Ring in Platinum</h3>
+                <p class="text-xs text-gray-500 mb-1">$2,499</p>
+                <div class="flex items-center text-xs text-yellow-500">
+                    <span>★★★★★</span>
+                    <span class="text-gray-500 ml-1">(24)</span>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="relative">
+                    <div class="bg-gray-100 aspect-square mb-2 flex items-center justify-center">
+                        <img src="/api/placeholder/200/200" alt="Halo Diamond Engagement Ring"
+                            class="max-h-full object-contain" />
+                    </div>
+                    <button class="absolute top-2 right-2 text-gray-400 hover:text-gray-700">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <h3 class="text-xs font-medium mb-1">Halo Set 1.25CT Diamond Engagement Ring in White Gold</h3>
+                <p class="text-xs text-gray-500 mb-1">$1,999</p>
+                <div class="flex items-center text-xs text-yellow-500">
+                    <span>★★★★☆</span>
+                    <span class="text-gray-500 ml-1">(16)</span>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="relative">
+                    <div class="bg-gray-100 aspect-square mb-2 flex items-center justify-center">
+                        <img src="/api/placeholder/200/200" alt="Yellow Gold Diamond Ring"
+                            class="max-h-full object-contain" />
+                    </div>
+                    <button class="absolute top-2 right-2 text-gray-400 hover:text-gray-700">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <h3 class="text-xs font-medium mb-1">Vintage Style 1.0CT Diamond Ring in Yellow Gold</h3>
+                <p class="text-xs text-gray-500 mb-1">$1,799</p>
+                <div class="flex items-center text-xs text-yellow-500">
+                    <span>★★★★★</span>
+                    <span class="text-gray-500 ml-1">(32)</span>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="relative">
+                    <div class="bg-gray-100 aspect-square mb-2 flex items-center justify-center">
+                        <img src="/api/placeholder/200/200" alt="Princess Cut Diamond Ring"
+                            class="max-h-full object-contain" />
+                    </div>
+                    <button class="absolute top-2 right-2 text-gray-400 hover:text-gray-700">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <h3 class="text-xs font-medium mb-1">Princess Cut 1.75CT Diamond Ring in Platinum</h3>
+                <p class="text-xs text-gray-500 mb-1">$2,899</p>
+                <div class="flex items-center text-xs text-yellow-500">
+                    <span>★★★★☆</span>
+                    <span class="text-gray-500 ml-1">(18)</span>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card">
+                <div class="relative">
+                    <div class="bg-gray-100 aspect-square mb-2 flex items-center justify-center">
+                        <img src="/api/placeholder/200/200" alt="Three Stone Diamond Ring"
+                            class="max-h-full object-contain" />
+                    </div>
+                    <button class="absolute top-2 right-2 text-gray-400 hover:text-gray-700">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <h3 class="text-xs font-medium mb-1">Three Stone Diamond Engagement Ring in Rose Gold</h3>
+                <p class="text-xs text-gray-500 mb-1">$2,299</p>
+                <div class="flex items-center text-xs text-yellow-500">
+                    <span>★★★★★</span>
+                    <span class="text-gray-500 ml-1">(27)</span>
+                </div>
+            </div>
+
+            <!-- Repeat for more rows -->
+            <!-- Row 2 Products -->
+            <div class="product-card">
+                <div class="relative">
+                    <div class="bg-gray-100 aspect-square mb-2 flex items-center justify-center">
+                        <img src="/api/placeholder/200/200" alt="Diamond Ring" class="max-h-full object-contain" />
+                    </div>
+                    <button class="absolute top-2 right-2 text-gray-400 hover:text-gray-700">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <h3 class="text-xs font-medium mb-1">Cushion Cut Diamond Engagement Ring</h3>
+                <p class="text-xs text-gray-500 mb-1">$2,199</p>
+                <div class="flex items-center text-xs text-yellow-500">
+                    <span>★★★★☆</span>
+                    <span class="text-gray-500 ml-1">(21)</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="relative">
+                    <div class="bg-gray-100 aspect-square mb-2 flex items-center justify-center">
+                        <img src="/api/placeholder/200/200" alt="Diamond Ring" class="max-h-full object-contain" />
+                    </div>
+                    <button class="absolute top-2 right-2 text-gray-400 hover:text-gray-700">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <h3 class="text-xs font-medium mb-1">Oval Diamond Halo Ring in White Gold</h3>
+                <p class="text-xs text-gray-500 mb-1">$1,899</p>
+                <div class="flex items-center text-xs text-yellow-500">
+                    <span>★★★★★</span>
+                    <span class="text-gray-500 ml-1">(34)</span>
+                </div>
+            </div>
+
+            <!-- Featured Banner (Spans 3 columns on larger screens) -->
+            <div class="col-span-2 md:col-span-3 bg-gray-800 text-white aspect-square md:aspect-[3/1] relative">
+                <img src="/api/placeholder/600/300" alt="Limited Edition Collection"
+                    class="w-full h-full object-cover" />
+                <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
+                    <div class="text-center p-4">
+                        <h2 class="text-lg md:text-xl font-bold mb-2">LIMITED EDITION COLLECTION</h2>
+                        <p class="text-sm mb-4">Exclusive designs for a limited time</p>
+                        <button class="bg-white text-gray-900 px-4 py-2 text-sm rounded-full hover:bg-gray-100">Shop
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More Products -->
+            <div class="product-card">
+                <div class="relative">
+                    <div class="bg-gray-100 aspect-square mb-2 flex items-center justify-center">
+                        <img src="/api/placeholder/200/200" alt="Diamond Ring" class="max-h-full object-contain" />
+                    </div>
+                    <button class="absolute top-2 right-2 text-gray-400 hover:text-gray-700">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <h3 class="text-xs font-medium mb-1">Solitaire Round Diamond Ring</h3>
+                <p class="text-xs text-gray-500 mb-1">$1,599</p>
+                <div class="flex items-center text-xs text-yellow-500">
+                    <span>★★★★☆</span>
+                    <span class="text-gray-500 ml-1">(19)</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="relative">
+                    <div class="bg-gray-100 aspect-square mb-2 flex items-center justify-center">
+                        <img src="/api/placeholder/200/200" alt="Diamond Ring" class="max-h-full object-contain" />
+                    </div>
+                    <button class="absolute top-2 right-2 text-gray-400 hover:text-gray-700">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <h3 class="text-xs font-medium mb-1">Vintage Style Diamond Band</h3>
+                <p class="text-xs text-gray-500 mb-1">$1,299</p>
+                <div class="flex items-center text-xs text-yellow-500">
+                    <span>★★★★★</span>
+                    <span class="text-gray-500 ml-1">(42)</span>
+                </div>
+            </div>
+
+            <!-- Add more products to fill out the grid -->
+            <!-- Row 4 Products -->
+            <div class="product-card">
+                <div class="relative">
+                    <div class="bg-gray-100 aspect-square mb-2 flex items-center justify-center">
+                        <img src="/api/placeholder/200/200" alt="Diamond Ring" class="max-h-full object-contain" />
+                    </div>
+                    <button class="absolute top-2 right-2 text-gray-400 hover:text-gray-700">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <h3 class="text-xs font-medium mb-1">Yellow Gold Emerald Cut Diamond Ring</h3>
+                <p class="text-xs text-gray-500 mb-1">$2,499</p>
+                <div class="flex items-center text-xs text-yellow-500">
+                    <span>★★★★☆</span>
+                    <span class="text-gray-500 ml-1">(15)</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="relative">
+                    <div class="bg-gray-100 aspect-square mb-2 flex items-center justify-center">
+                        <img src="/api/placeholder/200/200" alt="Diamond Ring" class="max-h-full object-contain" />
+                    </div>
+                    <button class="absolute top-2 right-2 text-gray-400 hover:text-gray-700">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <h3 class="text-xs font-medium mb-1">Princess Cut Diamond Three Stone Ring</h3>
+                <p class="text-xs text-gray-500 mb-1">$1,999</p>
+                <div class="flex items-center text-xs text-yellow-500">
+                    <span>★★★★★</span>
+                    <span class="text-gray-500 ml-1">(29)</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="relative">
+                    <div class="bg-gray-100 aspect-square mb-2 flex items-center justify-center">
+                        <img src="/api/placeholder/200/200" alt="Diamond Ring" class="max-h-full object-contain" />
+                    </div>
+                    <button class="absolute top-2 right-2 text-gray-400 hover:text-gray-700">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <h3 class="text-xs font-medium mb-1">Rose Gold Pave Diamond Band</h3>
+                <p class="text-xs text-gray-500 mb-1">$1,399</p>
+                <div class="flex items-center text-xs text-yellow-500">
+                    <span>★★★★☆</span>
+                    <span class="text-gray-500 ml-1">(23)</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="relative">
+                    <div class="bg-gray-100 aspect-square mb-2 flex items-center justify-center">
+                        <img src="/api/placeholder/200/200" alt="Diamond Ring" class="max-h-full object-contain" />
+                    </div>
+                    <button class="absolute top-2 right-2 text-gray-400 hover:text-gray-700">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <h3 class="text-xs font-medium mb-1">Platinum Channel Set Diamond Ring</h3>
+                <p class="text-xs text-gray-500 mb-1">$1,399</p>
+                <div class="flex items-center text-xs text-yellow-500">
+                    <span>★★★★☆</span>
+                    <span class="text-gray-500 ml-1">(23)</span>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

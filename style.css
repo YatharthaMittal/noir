@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+body{
+    font-family: 'Tenor Sans';
+}
+:root{
+--wb-black: #000;
+--wb-brown: #927160;
+}
+
+
+/* slider css */
+.style .owl-nav,.shape .owl-nav,.metal .owl-nav {display: block !important;}
+/* .owl-item.active{width:fit-content!important;margin-right: 20px;} */
+.style .owl-prev,
+.style .owl-next,
+.shape .owl-prev,
+.shape .owl-next,
+.metal .owl-prev,
+.metal .owl-next {
+    font-size: 20px !important;
+    color: var(--wb-black) !important;
+    background: #fff !important;
+    padding: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.style .owl-prev,.shape .owl-prev,.metal .owl-prev {left: 20px;top: 40%;}
+
+.style .owl-next,.shape .owl-next,.metal .owl-next {right: 20px;top: 40%;}
+
+
+.selected-btn{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.metal-dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+}
+.metal-dot.rose{
+    background-color: #ba717c;
+} 
+.metal-dot.yellow{
+    background-color: #f7b723;
+} 
+.metal-dot.white{
+    background-color: #cfcfcf;
+} 
+#btn_grid_one, #btn_grid_two, #btn_grid_five {
+    position: relative; 
+    cursor: pointer; 
+}
+
+#btn_grid_one.active::after,
+#btn_grid_two.active::after,
+#btn_grid_five.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 6px; 
+    height: 2px; 
+    margin-top: 5px; 
+    border-radius: 3.43px; 
+    background-color: #000; 
+}
